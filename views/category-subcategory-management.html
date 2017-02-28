@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="categorysubmngmtPanel">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8"/>
+<title>Category-Sub-category Management</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<meta name="MobileOptimized" content="320">
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css"/>
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-fileinput.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/select2.min.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/datepicker.css"/>
+
+<link rel="stylesheet" type="text/css" href="assets/css/daterangepicker-bs3.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/datetimepicker.css"/>
+
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-markdown.min.css">
+
+<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.html"/>
+
+   
+    <link href="../public/stylesheets/Customize.css" rel="stylesheet" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed" ng-controller="categorysubmngmtController"  data-ng-init="init(categorysubmngmtModel)">
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-fixed-top">
+	<!-- BEGIN TOP NAVIGATION BAR -->
+	<div class="header-inner">
+		<!-- BEGIN LOGO -->
+		<div class="page-logo">
+            <a href="#">
+                <img src="assets/img/logo.png" alt="logo"/>
+            </a>
+        </div>
+        <form class="search-form search-form-header" role="form" action="">
+            <div class="input-icon right">
+               <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" class="form-control input-sm" name="query" placeholder="Search...">
+            </div>
+        </form>
+		<!-- END LOGO -->
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<img src="assets/img/menu-toggler.png" alt=""/>
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<ul class="nav navbar-nav pull-right">
+	
+            
+			<!-- END TODO DROPDOWN -->
+			<li class="devider">
+				 &nbsp;
+			</li>
+			<!-- BEGIN USER LOGIN DROPDOWN -->
+			<li class="dropdown user">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+				<img alt="" src="assets/img/avatar3_small.jpg"/>
+				<span class="username username-hide-on-mobile">{{categorysubmngmtModel.loginData.UserName}} </span>
+				<i class="fa fa-angle-down"></i>
+				</a>
+				<ul class="dropdown-menu">
+					
+					<li>
+						<a href="login.html"><i class="fa fa-key"></i> Log Out</a>
+					</li>
+				</ul>
+			</li>
+			
+		</ul>
+	
+	</div>
+	
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+    <div ng-include="'layoutSideMenu'"></div> 
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+                    
+					<li>
+						<a href="category-subcategory-management.html">Category-Sub-category Management</a>
+						
+					</li>
+				</ul>
+				
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+                    <form action="#" class="form-horizontal form-bordered">
+								<div class="form-body">
+								
+                                    
+                                    <div class="form-group nobordergroup">
+                                    
+                                    <div class="col-md-4"> 
+										<label class="control-label  pull-left" >Create New Category</label>
+                                        </div> 
+                                         <div class="col-md-6"> 
+										 <input class="form-control"  ng-required="true" name="CategoryName" ng-model="Categorymodel.CategoryName" placeholder="Enter New Category" type="text">
+										
+									</div>
+                                    </div>
+                                    
+                                     <p class="gap"></p>
+                                     
+                                     
+                                     <div class="form-group nobordergroup">
+                                     
+                                      <div class="col-md-4">
+										<label class="control-label  pull-left" >Enter Sub-category</label>
+                                        </div>
+                                      <div class="col-md-6">
+										<input class="form-control"   ng-required="true" name="SubCategoryName" ng-model="Categorymodel.SubCategoryName"  placeholder="Enter Sub-category" type="text">
+									</div>
+                                    </div>
+                                    
+                                     <p class="gap"></p>
+                                      <p class="gap"></p>
+                                       <p class="gap"></p>
+                                       
+                                       
+                                       <div class="createbutton">
+                                        <div class="createbuttoninn">
+                                     <button type="button" class="btn btn-primary" ng-click="Savecategory(Categorymodel)">Create</button>
+                                     <button type="button" class="btn btn-warning">Cancel</button>
+                                     </div>
+                                     </div>
+                                     
+                                    
+                                       <p class="gap"></p>
+                                    
+                                    <div class="form-group nobordergroup">
+                                    <div class="col-md-4">
+										<label class="control-label">Modify Category Name</label>
+                                        </div>
+                                        
+									<div class="col-md-3">
+											<select class="form-control input-large " name="categorysubmngmtModel" select2="" data-placeholder="Select Category Name"  ng-disabled="disabled" ng-model="MainCatModel"
+                                                    ng-options="item.CategoryName for item in categorysubmngmtModel.TableData track by item.ServiceCatID"
+                                                     >
+                                                <option value=""></option>
+												<!--<option value="{{item.ServiceCatID}}" ng-repeat="item in categorysubmngmtModel.TableData">{{item.CategoryName}}</option-->>
+												<!--<option value="AL">Alabama</option>
+												<option value="WY">Wyoming</option>
+                                                <option value="AL">Alabama</option>
+												<option value="WY">Wyoming</option>-->
+											</select> 
+										</div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" value="{{MainCatModel.CategoryName}}" ng-model="mMainCatModel" />
+                                        </div>
+									</div>
+                                   
+                                    
+                                     <p class="gap"></p>
+                                    
+                                    <div class="form-group nobordergroup">
+                                    <div class="col-md-4">
+										<label class="control-label">Modify Sub-category</label>
+                                        </div>
+                                        
+									<div class="col-md-3">
+											<select class="form-control input-large" select2="" data-placeholder="Select Sub-category"  ng-disabled="disabled" ng-model="ChildCatModel"
+                                                    ng-options="item.SubCategoryName for item in categorysubmngmtModel.SubCategoryData track by item.SubCatID">
+												<option value="" ></option>
+												<!--<option value="{{item.SubCatID}}"  ng-repeat="item in categorysubmngmtModel.SubCategoryData">{{item.SubCategoryName}}</option>-->
+												 
+											</select>
+											
+										</div>
+                                        <div class="col-md-3">                                            
+                                            <input type="text" class="form-control" value="{{ChildCatModel.SubCategoryName}}" ng-model="mChildCatModel" />
+                                        </div>
+									</div>
+                                    
+                                      <p class="gap"></p>
+                                       <p class="gap"></p>
+                                    <p class="gap"></p>
+                                    
+                                    <div class="createbutton">
+                                        <div class="createbuttoninn">
+                                     <button type="button" ng-click="modifyCategory(mMainCatModel,mChildCatModel, MainCatModel, ChildCatModel)" class="btn btn-primary">Modify</button>
+                                     <button type="button" class="btn btn-warning"> Cancel</button>
+                                     </div>
+                                     </div>
+                                    
+                                    
+								</div>
+							</form> 
+           <div class="row">
+				<div class="col-md-3">
+					<ul class="ver-inline-menu tabbable margin-bottom-10">
+						<li   ng-repeat="item in categorysubmngmtModel.TableData"  ng-class='{active:$first}'> 
+							<a data-toggle="tab" href="#tab_{{item.ServiceCatID}}">{{item.CategoryName}}</a> 
+						</li> 
+					</ul>
+				</div>
+				<div class="col-md-9">
+					<div class="tab-content">                    
+						<div id="tab_{{item.ServiceCatID}}" class="tab-pane"  ng-class='{active:$first}'  ng-repeat="item in categorysubmngmtModel.TableData">
+							<div id="accordion{{item.ServiceCatID}}" class="panel-group">
+						    <div class="panel panel-default">									                                    
+                                    <ul class="list-group">
+								        <li class="list-group-item bg-blue" ng-repeat="i in item.ServiceProviderSubCat">
+									        <a href="#">{{i.SubCategoryName}}</a>
+								        </li> 
+							        </ul> 
+								</div>
+							</div>
+						</div>                        
+					</div>
+				</div>
+			</div>
+                    
+					
+					<!-- END PORTLET-->
+				</div>
+			</div>
+            
+            
+           
+			
+	</div>
+    
+    </div>
+	
+</div>
+
+<div class="footer">
+	<div class="footer-inner">
+		
+2016 © Townhouse.
+
+	</div>
+	<div class="footer-tools">
+		<span class="go-top">
+		<i class="fa fa-angle-up"></i>
+		</span>
+	</div>
+</div>
+
+<script src="assets/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/select2.min.js"></script>
+    <!-- Anjular js code initialize-->
+    <script src="../assets/js/angular.js">
+    </script><!-- load angular -->
+    <script src="../public/javascripts/categorysubmngmtCore.js"></script>
+<script src="assets/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.uniform.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/spinner.min.js"></script>
+<script type="text/javascript" src="assets/js/ckeditor.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-fileinput.js"></script>
+
+<script type="text/javascript" src="assets/js/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="assets/js/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/js/jquery.inputmask.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.input-ip-address-control-1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.multi-select.js"></script>
+<script src="assets/js/pwstrength-bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script ssrc="assets/js/jquery.tagsinput.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-markdown.js" type="text/javascript"></script>
+<script src="assets/js/markdown.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-maxlength.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="assets/js/handlebars.min.js" type="text/javascript"></script>
+<script src="assets/js/typeahead.bundle.min.js" type="text/javascript"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/form-components.js"></script>
+
+
+
+<script>
+jQuery(document).ready(function() {       
+    App.init();
+   FormComponents.init();
+});
+</script>
+
+
+
+
+
+</body>
+
+
+</html>

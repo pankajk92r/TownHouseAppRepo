@@ -1,0 +1,1 @@
+D:\TownHouseApp\bin\Microsoft.NodejsTools.WebRole.dll

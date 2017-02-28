@@ -1,0 +1,9 @@
+﻿ .errorMessage>span{
+     color:red;
+ }
+ .select2-selection__rendered{
+     line-height:55px !important;
+ }
+ .select2-selection, .select2-selection__arrow{
+     height:55px !important;
+ }

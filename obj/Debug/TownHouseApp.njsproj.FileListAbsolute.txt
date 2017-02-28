@@ -1,0 +1,2 @@
+D:\TownHouseApp\bin\Microsoft.NodejsTools.WebRole.dll
+D:\TownHouseApp\obj\Debug\TownHouseApp.njsprojResolveAssemblyReference.cache
