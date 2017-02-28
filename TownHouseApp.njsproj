@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>TownHouseApp</Name>
+    <RootNamespace>TownHouseApp</RootNamespace>
+    <NameOfLastUsedPublishProfile>TWApp</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8559b352-a2e7-4e49-ad4d-089c23828373</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="assets\js\additional-methods.min.js" />
+    <Compile Include="assets\js\address.js" />
+    <Compile Include="assets\js\angular.js" />
+    <Compile Include="assets\js\app.js" />
+    <Compile Include="assets\js\bootstrap-colorpicker.js" />
+    <Compile Include="assets\js\bootstrap-datepaginator.min.js" />
+    <Compile Include="assets\js\bootstrap-datepicker.js" />
+    <Compile Include="assets\js\bootstrap-datetimepicker.js" />
+    <Compile Include="assets\js\bootstrap-editable.min.js" />
+    <Compile Include="assets\js\bootstrap-fileinput.js" />
+    <Compile Include="assets\js\bootstrap-hover-dropdown.min.js" />
+    <Compile Include="assets\js\bootstrap-markdown.js" />
+    <Compile Include="assets\js\bootstrap-maxlength.min.js" />
+    <Compile Include="assets\js\bootstrap-modal.js" />
+    <Compile Include="assets\js\bootstrap-modalmanager.js" />
+    <Compile Include="assets\js\bootstrap-switch.min.js" />
+    <Compile Include="assets\js\bootstrap-timepicker.min.js" />
+    <Compile Include="assets\js\bootstrap-wysihtml5.js" />
+    <Compile Include="assets\js\bootstrap.min.js" />
+    <Compile Include="assets\js\bootstrap.touchspin.js" />
+    <Compile Include="assets\js\calendar.js" />
+    <Compile Include="assets\js\canvas-to-blob.min.js" />
+    <Compile Include="assets\js\charts.js" />
+    <Compile Include="assets\js\ckeditor.js" />
+    <Compile Include="assets\js\clockface.js" />
+    <Compile Include="assets\js\contact-us.js" />
+    <Compile Include="assets\js\datatable.js" />
+    <Compile Include="assets\js\dataTables.bootstrap.js" />
+    <Compile Include="assets\js\dataTables.colReorder.min.js" />
+    <Compile Include="assets\js\dataTables.scroller.min.js" />
+    <Compile Include="assets\js\dataTables.tableTools.min.js" />
+    <Compile Include="assets\js\daterangepicker.js" />
+    <Compile Include="assets\js\dropzone.js" />
+    <Compile Include="assets\js\form-components.js" />
+    <Compile Include="assets\js\form-dropzone.js" />
+    <Compile Include="assets\js\form-editable.js" />
+    <Compile Include="assets\js\form-fileupload.js" />
+    <Compile Include="assets\js\form-image-crop.js" />
+    <Compile Include="assets\js\form-samples.js" />
+    <Compile Include="assets\js\form-validation.js" />
+    <Compile Include="assets\js\form-wizard.js" />
+    <Compile Include="assets\js\fullcalendar.min.js" />
+    <Compile Include="assets\js\gmaps.js" />
+    <Compile Include="assets\js\handlebars.min.js" />
+    <Compile Include="assets\js\holder.js" />
+    <Compile Include="assets\js\idle-timeout.js" />
+    <Compile Include="assets\js\inbox.js" />
+    <Compile Include="assets\js\index.js" />
+    <Compile Include="assets\js\ion.rangeSlider.min.js" />
+    <Compile Include="assets\js\jquery-1.11.0.min.js" />
+    <Compile Include="assets\js\jquery-migrate-1.2.1.min.js" />
+    <Compile Include="assets\js\jquery-ui-1.10.3.custom.min.js" />
+    <Compile Include="assets\js\jquery.blockui.min.js" />
+    <Compile Include="assets\js\jquery.blueimp-gallery.min.js" />
+    <Compile Include="assets\js\jquery.bootpag.min.js" />
+    <Compile Include="assets\js\jquery.bootstrap.wizard.min.js" />
+    <Compile Include="assets\js\jquery.color.js" />
+    <Compile Include="assets\js\jquery.dataTables.min.js" />
+    <Compile Include="assets\js\jquery.easypiechart.min.js" />
+    <Compile Include="assets\js\jquery.fancybox.pack.js" />
+    <Compile Include="assets\js\jquery.fileupload-audio.js" />
+    <Compile Include="assets\js\jquery.fileupload-image.js" />
+    <Compile Include="assets\js\jquery.fileupload-process.js" />
+    <Compile Include="assets\js\jquery.fileupload-ui.js" />
+    <Compile Include="assets\js\jquery.fileupload-validate.js" />
+    <Compile Include="assets\js\jquery.fileupload-video.js" />
+    <Compile Include="assets\js\jquery.fileupload.js" />
+    <Compile Include="assets\js\jquery.flot.crosshair.js" />
+    <Compile Include="assets\js\jquery.flot.js" />
+    <Compile Include="assets\js\jquery.flot.pie.js" />
+    <Compile Include="assets\js\jquery.flot.resize.js" />
+    <Compile Include="assets\js\jquery.flot.stack.js" />
+    <Compile Include="assets\js\jquery.gritter.js" />
+    <Compile Include="assets\js\jquery.idletimeout.js" />
+    <Compile Include="assets\js\jquery.idletimer.js" />
+    <Compile Include="assets\js\jquery.iframe-transport.js" />
+    <Compile Include="assets\js\jquery.input-ip-address-control-1.0.min.js" />
+    <Compile Include="assets\js\jquery.inputmask.bundle.min.js" />
+    <Compile Include="assets\js\jquery.Jcrop.min.js" />
+    <Compile Include="assets\js\jquery.knob.js" />
+    <Compile Include="assets\js\jquery.mixitup.min.js" />
+    <Compile Include="assets\js\jquery.mockjax.js" />
+    <Compile Include="assets\js\jquery.multi-select.js" />
+    <Compile Include="assets\js\jquery.nestable.js" />
+    <Compile Include="assets\js\jquery.peity.min.js" />
+    <Compile Include="assets\js\jquery.pulsate.min.js" />
+    <Compile Include="assets\js\jquery.sessionTimeout.min.js" />
+    <Compile Include="assets\js\jquery.slimscroll.min.js" />
+    <Compile Include="assets\js\jquery.sparkline.min.js" />
+    <Compile Include="assets\js\jquery.tagsinput.min.js" />
+    <Compile Include="assets\js\jquery.ui.widget.js" />
+    <Compile Include="assets\js\jquery.uniform.min.js" />
+    <Compile Include="assets\js\jquery.validate.min.js" />
+    <Compile Include="assets\js\jquery.vmap.sampledata.js" />
+    <Compile Include="assets\js\jstree.min.js" />
+    <Compile Include="assets\js\load-image.min.js" />
+    <Compile Include="assets\js\login.js" />
+    <Compile Include="assets\js\maps-google.js" />
+    <Compile Include="assets\js\maps-vector.js" />
+    <Compile Include="assets\js\markdown.js" />
+    <Compile Include="assets\js\moment.min.js" />
+    <Compile Include="assets\js\pagination.js" />
+    <Compile Include="assets\js\portfolio.js" />
+    <Compile Include="assets\js\portlet-draggable.js" />
+    <Compile Include="assets\js\pwstrength-bootstrap.min.js" />
+    <Compile Include="public\javascripts\categorysubmngmtCore.js" />
+    <Compile Include="public\javascripts\admin-bid-listing-reportCore.js" />
+    <Compile Include="public\javascripts\admin-chat-messageCore.js" />
+    <Compile Include="public\javascripts\admin-edit-costCore.js" />
+    <Compile Include="public\javascripts\admin-edit-formCore.js" />
+    <Compile Include="public\javascripts\admin-review-ratingCore.js" />
+    <Compile Include="public\javascripts\admin-search-costCore.js" />
+    <Compile Include="public\javascripts\dashbordCore.js" />
+    <Compile Include="public\javascripts\search-ativitiesCore.js" />
+    <Compile Include="public\javascripts\searchserviceproviderCore.js" />
+    <Compile Include="public\javascripts\services-provider-formCore.js" />
+    <Compile Include="public\javascripts\errorCore.js" />
+    <Compile Include="public\javascripts\review-ratingCore.js" />
+    <Compile Include="assets\js\select2.min.js" />
+    <Compile Include="assets\js\spinner.min.js" />
+    <Compile Include="assets\js\table-advanced.js" />
+    <Compile Include="assets\js\table-ajax.js" />
+    <Compile Include="assets\js\table-editable.js" />
+    <Compile Include="assets\js\table-managed.js" />
+    <Compile Include="assets\js\tasks.js" />
+    <Compile Include="assets\js\tmpl.min.js" />
+    <Compile Include="assets\js\toastr.min.js" />
+    <Compile Include="assets\js\typeahead.bundle.min.js" />
+    <Compile Include="assets\js\ui-datepaginator.js" />
+    <Compile Include="assets\js\ui-extended-modals.js" />
+    <Compile Include="assets\js\ui-general.js" />
+    <Compile Include="assets\js\ui-ion-sliders.js" />
+    <Compile Include="assets\js\ui-jqueryui-sliders.js" />
+    <Compile Include="assets\js\ui-knob.js" />
+    <Compile Include="assets\js\ui-nestable.js" />
+    <Compile Include="assets\js\ui-toastr.js" />
+    <Compile Include="assets\js\ui-tree.js" />
+    <Compile Include="assets\js\wysihtml5-0.3.0.js" />
+    <Compile Include="assets\js\wysihtml5.js" />
+    <Compile Include="config\database.js" />
+    <Compile Include="config\server.js" />
+    <Compile Include="models\mongo.js" />
+    <Compile Include="models\mongotest.js" />
+    <Compile Include="models\tbl_userSchema.js" />
+    <Compile Include="public\javascripts\loginCore.js" />
+    <Compile Include="routes\admin-bid-listing-report.js" />
+    <Compile Include="routes\admin-chat-message.js" />
+    <Compile Include="routes\admin-edit-cost.js" />
+    <Compile Include="routes\admin-edit-form.js" />
+    <Compile Include="routes\admin-review-rating.js" />
+    <Compile Include="routes\admin-search-cost.js" />
+    <Compile Include="routes\category-subcategory-management.js" />
+    <Compile Include="routes\error.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\layoutSideMenu.js" />
+    <Compile Include="routes\login.js" />
+    <Compile Include="routes\review-rating.js" />
+    <Compile Include="routes\search-ativities.js" />
+    <Compile Include="routes\searchserviceprovider.js" />
+    <Compile Include="routes\services-provider-form.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Compile Include="routes\validateLogin.js" />
+    <Content Include="assets\css\about-us.css" />
+    <Content Include="assets\css\address.css" />
+    <Content Include="assets\css\blog.css" />
+    <Content Include="assets\css\blueimp-gallery.min.css" />
+    <Content Include="assets\css\bootstrap-editable.css" />
+    <Content Include="assets\css\bootstrap-fileinput.css" />
+    <Content Include="assets\css\bootstrap-markdown.min.css" />
+    <Content Include="assets\css\bootstrap-modal-bs3patch.css" />
+    <Content Include="assets\css\bootstrap-modal.css" />
+    <Content Include="assets\css\bootstrap-switch.min.css" />
+    <Content Include="assets\css\bootstrap-timepicker.min.css" />
+    <Content Include="assets\css\bootstrap-wysihtml5.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\clockface.css" />
+    <Content Include="assets\css\colorpicker.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\dataTables.bootstrap.css" />
+    <Content Include="assets\css\dataTables.colReorder.min.css" />
+    <Content Include="assets\css\dataTables.scroller.min.css" />
+    <Content Include="assets\css\datepicker.css" />
+    <Content Include="assets\css\daterangepicker-bs3.css" />
+    <Content Include="assets\css\datetimepicker.css" />
+    <Content Include="assets\css\default.css" />
+    <Content Include="assets\css\dropzone.css" />
+    <Content Include="assets\css\email.html" />
+    <Content Include="assets\css\error.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\fonts\fontawesome-webfont862f.eot" />
+    <Content Include="assets\css\fonts\fontawesome-webfont862f.svg" />
+    <Content Include="assets\css\fonts\fontawesome-webfont862f.ttf" />
+    <Content Include="assets\css\fonts\fontawesome-webfont862f.woff" />
+    <Content Include="assets\css\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\css\fullcalendar.css" />
+    <Content Include="assets\css\image-crop.css" />
+    <Content Include="assets\css\inbox.css" />
+    <Content Include="assets\css\invoice.css" />
+    <Content Include="assets\css\ion.rangeSlider.Conquer.css" />
+    <Content Include="assets\css\ion.rangeSlider.css" />
+    <Content Include="assets\css\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="assets\css\jquery.fancybox.css" />
+    <Content Include="assets\css\jquery.fileupload-ui.css" />
+    <Content Include="assets\css\jquery.fileupload.css" />
+    <Content Include="assets\css\jquery.gritter.css" />
+    <Content Include="assets\css\jquery.Jcrop.min.css" />
+    <Content Include="assets\css\jquery.nestable.css" />
+    <Content Include="assets\css\jquery.tagsinput.css" />
+    <Content Include="assets\css\jqvmap.css" />
+    <Content Include="assets\css\lock.css" />
+    <Content Include="assets\css\login.css" />
+    <Content Include="assets\css\multi-select.css" />
+    <Content Include="assets\css\pagination.css" />
+    <Content Include="assets\css\plugins.css" />
+    <Content Include="assets\css\portfolio.css" />
+    <Content Include="assets\css\pricing-tables.css" />
+    <Content Include="assets\css\print.css" />
+    <Content Include="assets\css\profile.css" />
+    <Content Include="assets\css\select2.css" />
+    <Content Include="assets\css\simple-line-icons.min.css" />
+    <Content Include="assets\css\style-conquer.css" />
+    <Content Include="assets\css\style-responsive.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\style.min.css" />
+    <Content Include="assets\css\tasks.css" />
+    <Content Include="assets\css\themes\default.css" />
+    <Content Include="assets\css\toastr.min.css" />
+    <Content Include="assets\css\typeahead.css" />
+    <Content Include="assets\css\uniform.default.css" />
+    <Content Include="assets\img\ajax-modal-loading.gif" />
+    <Content Include="assets\img\avatar.png" />
+    <Content Include="assets\img\avatar1.jpg" />
+    <Content Include="assets\img\avatar2.jpg" />
+    <Content Include="assets\img\avatar3.jpg" />
+    <Content Include="assets\img\avatar3_small.jpg" />
+    <Content Include="assets\img\bg-white-lock.png" />
+    <Content Include="assets\img\block-flag.png" />
+    <Content Include="assets\img\cover11.jpg" />
+    <Content Include="assets\img\datatable-row-openclose.png" />
+    <Content Include="assets\img\dummylogo.png" />
+    <Content Include="assets\img\flag-icon.png" />
+    <Content Include="assets\img\flag-red.png" />
+    <Content Include="assets\img\icon-img-down.png" />
+    <Content Include="assets\img\icon-img-up.png" />
+    <Content Include="assets\img\img1.jpg" />
+    <Content Include="assets\img\img2.jpg" />
+    <Content Include="assets\img\img4.jpg" />
+    <Content Include="assets\img\input-spinner.gif" />
+    <Content Include="assets\img\loading.gif" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\menu-toggler.png" />
+    <Content Include="assets\img\overlay-icon.png" />
+    <Content Include="assets\img\portlet-collapse-icon.png" />
+    <Content Include="assets\img\portlet-config-icon.png" />
+    <Content Include="assets\img\portlet-expand-icon.png" />
+    <Content Include="assets\img\portlet-reload-icon.png" />
+    <Content Include="assets\img\portlet-remove-icon-white.png" />
+    <Content Include="assets\img\portlet-remove-icon.png" />
+    <Content Include="assets\img\profile.jpg" />
+    <Content Include="assets\img\remove-icon-small.png" />
+    <Content Include="assets\img\select2.png" />
+    <Content Include="assets\img\serif-mycompany.png" />
+    <Content Include="assets\img\star.png" />
+    <Content Include="assets\img\userr.jpg" />
+    <Content Include="package.json" />
+    <Content Include="public\stylesheets\Customize.css" />
+    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="README.md" />
+    <None Include="TWApp.pubxml" />
+    <Content Include="typings.json" />
+    <Content Include="views\admin-bid-listing-report.html" />
+    <Content Include="views\admin-chat-message.html" />
+    <Content Include="views\admin-edit-cost.html" />
+    <Content Include="views\admin-edit-form.html" />
+    <Content Include="views\admin-review-rating.html" />
+    <Content Include="views\admin-search-cost.html" />
+    <Content Include="views\category-subcategory-management.html" />
+    <Content Include="views\error.html" />
+    <Content Include="views\index.html" />
+    <Content Include="views\layout.html" />
+    <Content Include="views\layoutFooter.html" />
+    <Content Include="views\layoutHeader.html" />
+    <Content Include="views\layoutSideMenu.html" />
+    <Content Include="views\login.html" />
+    <Content Include="views\review-rating.html" />
+    <Content Include="views\search-ativities.html" />
+    <Content Include="views\searchserviceprovider.html" />
+    <Content Include="views\services-provider-form.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="assets\css\" />
+    <Folder Include="assets\css\fonts\" />
+    <Folder Include="assets\css\themes\" />
+    <Folder Include="assets\img\" />
+    <Folder Include="assets\js\" />
+    <Folder Include="bin\" />
+    <Folder Include="config\" />
+    <Folder Include="models\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\debug\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express-session\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\mongoose\" />
+    <Folder Include="typings\globals\morgan\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="typings\globals\stylus\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-session\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mongoose\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
